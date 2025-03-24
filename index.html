@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="text-base-dynamic">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="./src/assets/css/styles.css" rel="stylesheet" />
+
+  <title>
+    Frontend Mentor | Huddle landing page with single introductory
+    section
+  </title>
+</head>
+
+<body
+  class="m-0 font-open-sans text-white bg-purple bg-[url(../images/bg-mobile.svg)] bg-no-repeat md:text-lg/[1.5] md:bg-[url(../images/bg-desktop.svg)] md:bg-fixed">
+  <header class="p-10 py-8 flex justify-between items-center gap-6 lg:p-20 lg:py-14">
+    <div class="logo">
+      <img class="max-w-[120px] transition-all md:max-w-[200px]" src="./src/assets/images/logo.svg" title="Huddle" />
+    </div>
+  </header>
+
+  <main class="text-center px-10 md:px-20 md:pt-10 md:text-left">
+    <div class="usp flex flex-col md:flex-row md:gap-15">
+      <div class="image mt-7 md:mt-0 md:basis-[57.05%]">
+        <img class="mx-auto w-full" src="./src/assets/images/illustration-mockups.svg" alt="Screen Mockups" />
+      </div>
+      <section class="description mt-15 md:mt-8 md:basis-[42.95%]">
+        <h2 class="font-poppins font-semibold text-2xl leading-9 mb-4 md:text-[40px]/15">
+          Build The Community Your Fans Will Love
+        </h2>
+        <p>
+          Huddle re-imagines the way we build communities. You have a
+          voice, but so does your audience. Create connections with
+          your users as you engage in genuine discussion.
+        </p>
+        <a
+          class="button inline-flex items-center justify-center mt-6 w-[200px] h-[40px] text-xs rounded-[20px] drop-shadow-(--button-drop-shadow) transition-all md:h-[56px] md:text-lg md:rounded-[28px] md:drop-shadow-(--button-drop-shadow-desktop)">
+          Register
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="px-10 pt-12 md:px-20 md:pt-7">
+    <div class="footer-right text-center md:text-right">
+      <div class="social-links mb-10">
+        <ul class="inline-flex gap-2.5 md:gap-4">
+          <li>
+            <a href="javascript:void(0)">
+              <i
+                class="social-icon fa-brands fa-facebook-f block transition before:block before:text-[12px] hover:text-hot-pink-light md:before:text-[16px]"></i>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i
+                class="social-icon fa-brands fa-twitter block transition before:block before:text-[12px] hover:text-hot-pink-light md:before:text-[16px]"></i>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i
+                class="social-icon fa-brands fa-instagram transition before:block before:text-[16px] hover:text-hot-pink-light md:before:text-[20px]"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="attribution p-4 text-white bg-black/50 rounded-t-2xl backdrop-blur-md text-center">
+        Challenge by
+        <a class="transition underline underline-offset-4" href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank">Frontend Mentor</a>. Coded by
+        <a class="transition underline underline-offset-4" href="https://www.frontendmentor.io/profile/david-pang"
+          target="_blank">David Pang</a>.
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

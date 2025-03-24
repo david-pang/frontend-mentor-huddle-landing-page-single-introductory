@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-facebook: #4267b2;
+    --color-brand-instagram: #c13584;
+    --color-brand-twitter: #1da1f2;
+    --color-hot-pink: #e880e8;
+    --color-hot-pink-light: #ff52c1;
+    --color-purple: #684bb1;
+    --font-open-sans: "Open Sans";
+    --font-poppins: "Poppins";
+    --text-base-dynamic: max(1vw, 16px);
+    --text-xxs: 0.625rem;
+
+    --button-bg-color: var(--color-white);
+    --button-color: var(--color-purple);
+    --button-drop-shadow: 1px 3px 5px --alpha(var(--color-black) / 27%);
+    --button-drop-shadow-desktop: 2px 4px 9px --alpha(var(--color-black) / 25%);
+    --button-text-shadow: 0px 4px 4px --alpha(var(--color-black) / 25%);
+    --button-bg-color-reverse: var(--color-white);
+    --button-color-reverse: var(--color-hot-pink);
+    --button-hover-bg-color: var(--color-hot-pink);
+    --button-hover-color: var(--color-white);
+
+    --social-icon-border: 1px solid;
+    --social-icon-border-radius: 50%;
+    --social-icon-height: 28px;
+    --social-icon-width: 28px;
+    --social-icon-height-desktop: 40px;
+    --social-icon-width-desktop: 40px;
+}
+
+@layer components {
+    .button {
+        background-color: var(--button-bg-color);
+        border: var(--button-bg-border);
+        color: var(--button-color);
+        text-shadow: var(--button-text-shadow);
+
+        @variant hover {
+            background-color: var(--button-hover-bg-color);
+            border: var(--button-hover-bg-border);
+            color: var(--button-hover-color);
+            cursor: pointer;
+        }
+    }
+
+    .social-icon {
+        align-items: center;
+        border: var(--social-icon-border);
+        border-radius: var(--social-icon-border-radius);
+        display: flex !important;
+        height: var(--social-icon-height);
+        justify-content: center;
+        width: var(--social-icon-width);
+
+        @variant min-md {
+            height: var(--social-icon-height-desktop);
+            width: var(--social-icon-width-desktop);
+        }
+    }
+}
+
+@utility button-* {
+    background-color: --value(--button-bg-color- *);
+    border: --value(--button-border- *);
+    color: --value(--button-color- *);
+    font-size: var(--button-font-size- *);
+
+    @variant hover {
+        background-color: --value(--button-hover-bg-color- *);
+        border: --value(--button-hover-bg-border- *);
+        color: --value(--button-hover-color- *);
+        cursor: pointer;
+    }
+}
